@@ -9,10 +9,6 @@ public class Producto {
 	 private int cantidad;
 	 private double operacion;
 	 
-	public int operacion(int prec,int cant) {
-		int op= prec*cant;
-		return op;
-	}
     public int getId() {
 		return Id;
 	}
@@ -47,8 +43,7 @@ public class Producto {
 		return operacion;
 	}
 	public void setOperacion(double prec,int cant) {
-		double c=cant;
-		this.operacion = prec*c;
+		this.operacion = prec*cant;
 	}
 
 }
