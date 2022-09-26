@@ -167,5 +167,11 @@ public class VentanaProducto extends JFrame{
 		sl_contentPane.putConstraint(SpringLayout.SOUTH, txtpnTotal, -25, SpringLayout.NORTH, btnGuardar);
 		sl_contentPane.putConstraint(SpringLayout.EAST, txtpnTotal, 314, SpringLayout.WEST, contentPane);
 		contentPane.add(txtpnTotal);
+		
+		JLabel lblBienvenidoALa = new JLabel("Bienvenido a la Tienda");
+		sl_contentPane.putConstraint(SpringLayout.NORTH, lblBienvenidoALa, 10, SpringLayout.NORTH, contentPane);
+		sl_contentPane.putConstraint(SpringLayout.EAST, lblBienvenidoALa, 0, SpringLayout.EAST, btnEliminar);
+		lblBienvenidoALa.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
+		contentPane.add(lblBienvenidoALa);
 	}
 }
