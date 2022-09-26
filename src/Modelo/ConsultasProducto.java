@@ -9,7 +9,6 @@ public class ConsultasProducto extends Conexion {
 
 	public boolean registrar(Producto pro){
 		PreparedStatement ps=null;
-		ResultSet rs = null;
 		Connection con= getConexion();
 	
 		String sql= "INSERT INTO producto(codigo,nombre,precio,cantidad,total) VALUES(?,?,?,?,?)";
